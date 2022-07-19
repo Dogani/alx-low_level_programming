@@ -18,5 +18,5 @@ ptr = _strcat(s1, s2);
 printf("%s", s1);
 printf("%s", s2);
 printf("%s", ptr);
-return (0);
+return(0);
 }
