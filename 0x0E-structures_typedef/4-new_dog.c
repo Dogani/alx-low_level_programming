@@ -25,7 +25,7 @@ if (dogo == NULL)
 free(dogo);
 return (NULL);
 }
-dogo->name = malloc(i * sizeof(dogo->name));
+dogo->name = malloc(i *sizeof(dogo->name));
 if (dogo->name == NULL)
 {
 free(dogo->name);
@@ -35,7 +35,7 @@ return (NULL);
 for (m = 0; m <= i; m++)
 dogo->name[m] = name[m];
 dogo->age = age;
-dogo->owner = malloc(j * sizeof(dogo->owner));
+dogo->owner = malloc(j *sizeof(dogo->owner));
 if (dogo->owner == NULL)
 {
 free(dogo->owner);
