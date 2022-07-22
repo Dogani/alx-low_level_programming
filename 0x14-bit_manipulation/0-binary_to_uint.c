@@ -21,7 +21,7 @@ return (1);
 else
 {
 y--;
-x = x * _pow(x, y);
+x = x* _pow(x, y);
 return (x);
 }
 
