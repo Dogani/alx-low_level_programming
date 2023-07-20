@@ -1,74 +1,64 @@
-#include <stdio.h>
 #include "3-calc.h"
+
+int op_add(int a, int b);
+int op_sub(int a, int b);
+int op_mul(int a, int b);
+int op_div(int a, int b);
+int op_mod(int a, int b);
+
 /**
- * op_add - function addition
+ * op_add - Returns the sum of two numbers.
+ * @a: The first number.
+ * @b: The second number.
  *
- * @a: Parameter 1
- * @b: Parameter 2
- *
- * Return: Return the result of the operation
+ * Return: The sum of a and b.
  */
 int op_add(int a, int b)
 {
-return (a + b);
+	return (a + b);
 }
 /**
- * op_sub - function subtraction
+ * op_sub - Returns the difference of two numbers.
+ * @a: The first number.
+ * @b: The second number.
  *
- * @a: Parameter 1
- * @b: Parameter 2
- *
- * Return: Return the result of the operation
+ * Return: The difference of a and b.
  */
 int op_sub(int a, int b)
 {
-return (a - b);
+	return (a - b);
 }
 /**
- * op_mul - function multiplication
+ * op_mul - Returns the product of two numbers.
+ * @a: The first number.
+ * @b: The second number.
  *
- * @a: Parameter 1
- * @b: Parameter 2
- *
- * Return: Return the result of the operation
+ * Return: The product of a and b.
  */
 int op_mul(int a, int b)
 {
-return (a * b);
+	return (a * b);
 }
 /**
- * op_div - function division
+ * op_div - Returns the division of two numbers.
+ * @a: The first number.
+ * @b: The second number.
  *
- * @a: Parameter 1
- * @b: Parameter 2
- *
- * Return: Return the result of the operation
+ * Return: The quotient of a and b.
  */
 int op_div(int a, int b)
 {
-if (b == 0)
-{
-printf("Error\n");
-exit(100);
-}
-
-return (a / b);
+	return (a / b);
 }
 /**
- * op_mod - function modulo
+ * op_mod - Returns the remainder of the division of two numbers.
+ * @a: The first number.
+ * @b: The second number.
  *
- * @a: Parameter 1
- * @b: Parameter 2
- *
- * Return: Return the result of the operation
+ * Return: The remainder of the division of a by b.
  */
 int op_mod(int a, int b)
 {
-if (b == 0)
-{
-printf("Error\n");
-exit(100);
+	return (a % b);
 }
 
-return (a % b);
-}
